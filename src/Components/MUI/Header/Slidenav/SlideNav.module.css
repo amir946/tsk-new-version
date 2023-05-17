@@ -1,9 +1,9 @@
-#DivParentSlidenav {
+/* #DivParentSlidenav {
   background-image: url(../../../../../public//image/shift-blog-2018-12-17-task-management-1-1.png);
   background-size: contain;
 
   background-repeat: no-repeat;
-}
+} */
 #ListMenu {
   direction: rtl;
 }
@@ -19,7 +19,7 @@
   display: block;
   width: 300px;
   height: 47px;
-  font-family: "vazir";
+  /* font-family: "vazir"; */
   font-weight: bold;
 }
 #ListMenu #li1 {
@@ -33,7 +33,7 @@ color: rgba(0, 0, 0, 0.401);
   display: block;
   width: 300px;
   height: 47px;
-  font-family: "vazir";
+  /* font-family: "vazir"; */
   font-weight: bold;
 }
 #SvgLogin2 {

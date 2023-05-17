@@ -1,4 +1,4 @@
-
+/* 
 @font-face {
     font-family: "vazir";
     src: url("./../../../public/fonts/Vazir.eot") format("eot"),
@@ -7,7 +7,7 @@
         url("./../../../public/fonts/Vazir.woff2") format("truetype");
     font-weight: normal;
     font-style: normal;
-}
+} */
 .formSignin {
   width: 100%;
   max-width: 420px;

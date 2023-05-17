@@ -2,7 +2,7 @@ import { toast } from "react-toastify";
 import { loginUser } from "../../Services/userservice";
 import { NavLink, useNavigate } from "react-router-dom";
 import Button from "@mui/material/Button";
-import { Helmet,HelmetProvider } from "react-helmet-async";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { addUser } from "../../actions/user";
 import jwt from "jsonwebtoken";
 import { useDispatch, useSelector } from "react-redux";
@@ -44,11 +44,11 @@ const Login = () => {
   return (
     <>
       <HelmetProvider>
-      <Helmet>
-        <title>Login</title>
+        <Helmet>
+          <title>Login</title>
         </Helmet>
       </HelmetProvider>
-        
+
       <Formik
         initialValues={{
           password: "",
@@ -100,13 +100,7 @@ const Login = () => {
             <Typography>
               <label>
                 <input type="checkbox" />
-                <Typography
-                  component={"span"}
-                  variant={"body2"}
-                  id={style.checkboxText}
-                >
-                  مرا به خاطر بسپار
-                </Typography>
+                <span id={style.checkboxText}>مرا به خاطر بسپار</span>
               </label>
             </Typography>
             {!isEmpty(user) ? null : (

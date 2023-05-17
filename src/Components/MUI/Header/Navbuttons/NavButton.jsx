@@ -3,7 +3,6 @@ import { EmptyListWorks } from "../../../../actions/emptyListWorks";
 import { isEmpty } from "lodash";
 import { useDispatch, useSelector } from "react-redux";
 import style from "./NavButton.module.css"
-import { Typography } from "@mui/material";
 
 const NavButton = () => {
 
@@ -27,9 +26,9 @@ const NavButton = () => {
             id={style.Btnlogin}
           >
             <i className="fa fa-user fa-lg" id={style.SvgLogin}></i>
-            <Typography component={"span"} variant={"body2"}>
+            <span >
               ورود
-            </Typography>
+            </span>
           </NavLink>
           <NavLink
             to="/register"
@@ -42,9 +41,9 @@ const NavButton = () => {
               id={style.SvgLogin}
               aria-hidden="true"
             ></i>
-            <Typography component={"span"} variant={"body2"}>
+            <span >
               ثبت نام
-            </Typography>
+            </span>
           </NavLink>
         </div>
       ) : (
@@ -61,9 +60,9 @@ const NavButton = () => {
               id={style.SvgLogin}
               aria-hidden="true"
             ></i>
-            <Typography component={"span"} variant={"body2"}>
+            <span >
               خروج
-            </Typography>
+            </span>
           </NavLink>
           <NavLink
             to="/userprofile"

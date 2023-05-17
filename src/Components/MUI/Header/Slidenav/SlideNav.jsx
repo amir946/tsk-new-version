@@ -13,13 +13,14 @@ import React from "react";
 import style from "./SlideNav.module.css";
 import { setblur } from "../../../../actions/setblur";
 import { styled } from "@mui/system";
-import { Typography } from "@mui/material";
 
 const useStyles = styled({
   list: { width: 250 },
   fullList: { width: "auto" },
 });
-
+const styleList = {
+  fontFamily: "vazir",
+};
 const SlideNav = () => {
   const classes = useStyles();
   const [state, setState] = useState({
@@ -69,7 +70,7 @@ const SlideNav = () => {
   const list = (anchor) => (
     <div
       style={{ marginTop: "40px" }}
-      id={style.DivParentSlidenav}
+      id="DivParentSlidenav"
       className={clsx(classes.list, {
         [classes.fullList]: anchor === "top" || anchor === "bottom",
       })}
@@ -86,9 +87,9 @@ const SlideNav = () => {
             <Button id={style.li} size="small" className={classes.margin}>
               <i className="fa fa-user fa-lg" id={style.SvgLogin2}></i>
 
-              <Typography component={"span"} variant={"body2"}>
+              <span component={"span"} variant={"body2"}>
                 ورود{" "}
-              </Typography>
+              </span>
             </Button>{" "}
           </NavLink>
         ) : null}
@@ -101,9 +102,7 @@ const SlideNav = () => {
                 id={style.SvgLogin2}
                 aria-hidden="true"
               ></i>
-              <Typography component={"span"} variant={"body2"}>
-                عضویت
-              </Typography>
+              <span>عضویت</span>
             </Button>{" "}
           </NavLink>
         ) : null}
@@ -116,9 +115,7 @@ const SlideNav = () => {
                 id={style.SvgLogin2}
                 aria-hidden="true"
               ></i>
-              <Typography component={"span"} variant={"body2"}>
-                پروفایل کاربری
-              </Typography>
+              <span>پروفایل کاربری</span>
             </Button>
           </Link>
         ) : (
@@ -129,10 +126,7 @@ const SlideNav = () => {
                 id={style.SvgLogin2}
                 aria-hidden="true"
               ></i>
-              <Typography component={"span"} variant={"body2"}>
-                {" "}
-                مشاهده دوره ها
-              </Typography>
+              <span> مشاهده دوره ها</span>
             </Button>
           </Link>
         )}
@@ -150,9 +144,7 @@ const SlideNav = () => {
                 id={style.SvgLogin2}
                 aria-hidden="true"
               ></i>
-              <Typography component={"span"} variant={"body2"}>
-                داشبورد
-              </Typography>
+              <span>داشبورد</span>
             </Button>
           </NavLink>
         ) : (
@@ -168,9 +160,7 @@ const SlideNav = () => {
                 id={style.SvgLogin2}
                 aria-hidden="true"
               ></i>
-              <Typography component={"span"} variant={"body2"}>
-                داشبورد
-              </Typography>
+              <span>داشبورد</span>
             </Button>
           </NavLink>
         )}
@@ -183,9 +173,7 @@ const SlideNav = () => {
             aria-hidden="true"
           ></i>
 
-          <Typography component={"span"} variant={"body2"}>
-            راهنمایی
-          </Typography>
+          <span>راهنمایی</span>
         </Button>
         {/* </NavLink> */}
 
@@ -197,9 +185,7 @@ const SlideNav = () => {
             aria-hidden="true"
           ></i>
 
-          <Typography component={"span"} variant={"body2"}>
-            درباره ما
-          </Typography>
+          <span>درباره ما</span>
         </Button>
         {/* </NavLink> */}
       </ul>
@@ -209,14 +195,14 @@ const SlideNav = () => {
     <div>
       {["left"].map((anchor) => (
         <Fragment key={anchor}>
-          <Typography
+          <span
             component={"span"}
             variant={"body2"}
             onClick={toggleDrawer(anchor, true)}
             className={style.BtnMenu}
           >
             <i className=" fa fa-bars fa-l "></i>
-          </Typography>
+          </span>
           <Drawer
             anchor={anchor}
             open={state[anchor]}

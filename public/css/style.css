@@ -1,21 +1,21 @@
- /* @font-face {
+ @font-face {
   font-family: "vazir";
-  src: url("../public/fonts/Vazir.eot") format("eot"),
-    url("../public/fonts/Vazir.ttf") format("woff"),
-    url("../public/fonts/Vazir.woff") format("truetype"),
-    url("../public/fonts/Vazir.woff2") format("truetype");
+  src: url("../fonts/Vazir.eot") format("eot"),
+    url("../fonts/Vazir.ttf") format("woff"),
+    url("../fonts/Vazir.woff") format("truetype"),
+    url("../fonts/Vazir.woff2") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../public/fonts/Roboto-Regular.eot") format("eot"),
-    url("../public/fonts/Roboto-Regular.ttf") format("woff"),
-    url("../public/fonts/Roboto-Regular.woff") format("truetype"),
-    url("../public/fonts/Roboto-Regular.woff2") format("truetype");
+  src: url("../fonts/Roboto-Regular.eot") format("eot"),
+    url("../fonts/Roboto-Regular.ttf") format("woff"),
+    url("../fonts/Roboto-Regular.woff") format("truetype"),
+    url("../fonts/Roboto-Regular.woff2") format("truetype");
   font-weight: normal;
   font-style: normal;
-}  */
+} 
 
 body {
   font-family: "vazir";
@@ -302,7 +302,7 @@ body {
 }
 
 #DivParentSlidenav {
-  /* background-image: url(../public/image/shift-blog-2018-12-17-task-management-1-1.png); */
+  background-image: url(../image/shift-blog-2018-12-17-task-management-1-1.png);
   background-size: contain;
 
   background-repeat: no-repeat;
@@ -456,7 +456,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  /* background-image: url("../image/sidebar-1.jpg"); */
+  background-image: url("../image/sidebar-1.jpg");
   margin-left: 254px;
   background-color: black;
   /* background-repeat: no-repeat; */
@@ -1190,7 +1190,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0px;
-  /* background-image: url(../public/image/sidebar-1.jpg); */
+  background-image: url(../image/sidebar-1.jpg);
   background-repeat: no-repeat;
   filter: blur(8px);
   /* opacity: 0.8; */
@@ -1699,6 +1699,9 @@ right: -10px !important;
   text-align: right;
   font-weight: bold;
 
+}
+#lisssss>div{
+   font-family: "vazir"!important;
 }
 
 /*Media Querys*/
@@ -2218,7 +2221,7 @@ right: -10px !important;
     bottom: 0;
     left: 0;
     right: 0px;
-    /* background-image: url(../public/image/sidebar-1.jpg); */
+    background-image: url(../image/sidebar-1.jpg);
     background-repeat: no-repeat;
     filter: blur(8px);
   }

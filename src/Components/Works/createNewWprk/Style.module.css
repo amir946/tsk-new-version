@@ -63,6 +63,7 @@
 #divinputCreateNewWork > input::placeholder {
   padding-right: 8px;
   font-family: "vazir";
+  color: rgba(0, 0, 0, 0.533);
 }
 #divinputCreateNewWork button {
   position: relative;
