@@ -1,0 +1,8 @@
+#nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+}

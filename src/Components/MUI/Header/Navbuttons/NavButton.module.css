@@ -1,0 +1,52 @@
+#SvgLogin {
+  max-width: 20px;
+  height: 20px;
+  margin-right:8px;
+  right: 5px;
+  position: relative;
+  top: 5px;
+  fill: white;
+}
+#Btnlogin {
+  margin-left: 20px;
+  font-family: "vazir";
+  font-weight: bold;
+  background-color: #4e9dfb;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+}
+#Btnlogin i {
+  position: relative;
+  top: -0.1rem;
+}
+#Btnlogin2 {
+  margin-left: 20px;
+  font-family: "vazir";
+    font-weight: bold;
+  color: white;
+  background-color: #4e9dfb;
+  text-decoration: none;
+  border-radius: 7px;
+  /* background-color: white; */
+}
+#Btnlogin2 i {
+  position: relative;
+  top: -0.1rem;
+}
+
+@media only screen and (max-width: 603px) {
+  #DivBtsnav {
+    position: relative;
+    left: 300px;
+    top: 30px;
+    display: none;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #DivBtsnav {
+    position: relative;
+    margin-bottom: 25px;
+    left: -285px;
+  }
+}

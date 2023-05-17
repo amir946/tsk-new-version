@@ -1,0 +1,2355 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../public/fonts/Vazir.eot") format("eot"),
+    url("../public/fonts/Vazir.ttf") format("woff"),
+    url("../public/fonts/Vazir.woff") format("truetype"),
+    url("../public/fonts/Vazir.woff2") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../public/fonts/Roboto-Regular.eot") format("eot"),
+    url("../public/fonts/Roboto-Regular.ttf") format("woff"),
+    url("../public/fonts/Roboto-Regular.woff") format("truetype"),
+    url("../public/fonts/Roboto-Regular.woff2") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "vazir";
+  background-color: #f4f6f8;
+}
+
+.react-slidedown {
+  height: 0;
+  transition-property: none;
+  transition-duration: 1.5s;
+  transition-timing-function: ease-out;
+}
+
+.react-slidedown.transitioning {
+  overflow-y: hidden;
+}
+
+.react-slidedown.closed {
+  display: none;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+#Btnlogin {
+  margin-left: 20px;
+  font-family: "vazir";
+  background-color: #4e9dfb;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+}
+
+#Btnlogin i {
+  position: relative;
+  top: -0.1rem;
+}
+
+#Btnlogin2 i {
+  position: relative;
+  top: -0.1rem;
+}
+
+#Btnlogindashboared {
+  /* margin-left: 50px; */
+  width: 121px;
+  text-align: center;
+}
+
+#Btnlogindashboared:hover {
+  opacity: 1;
+  position: relative;
+  /* top: 10px; */
+}
+
+#BtnDisplayresults {
+  margin-left: 0px;
+  font-family: "vazir";
+  text-decoration: none;
+  border-radius: 7px;
+}
+
+#BtnDisplayresults:hover {
+  background-color: #4e9dfb;
+  /* transition: ease-in-out 0.7s; */
+}
+
+#BtnDisplayresults3 {
+  margin-left: 20px;
+  font-family: "vazir";
+  background-color: #4e9dfb;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+}
+
+.Activelink {
+  background-color: #4e9dfb;
+  color: white;
+}
+
+.Disiblelink {
+  background-color: #f4f6f8;
+  color: #595959;
+}
+
+#BtnDisplayresults2 {
+  margin-left: 0px;
+  font-family: "vazir";
+  background-color: #f4f6f8;
+  color: #595959;
+  text-decoration: none;
+  border-radius: 0px;
+  width: 100px;
+}
+
+#Btnlogin2 {
+  margin-left: 20px;
+  font-family: "vazir";
+  color: white;
+  background-color: #4e9dfb;
+  text-decoration: none;
+  border-radius: 7px;
+  /* background-color: white; */
+}
+
+#SvgLogin {
+  max-width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  position: relative;
+  top: 5px;
+  fill: white;
+}
+
+#BtnUserhelp {
+  position: relative;
+  bottom: -20px;
+  left: 12px;
+  color: white;
+  margin-right: 20px;
+  font-family: "vazir";
+}
+
+#BtnUserhelp a {
+  width: 45px;
+  height: 45px;
+}
+
+#Ulhelpuser {
+  font-family: "vazir";
+  font-size: 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  background-color: #4e9dfb;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #f4f6f8;
+  text-align: center;
+  border-radius: 25px;
+}
+
+#Ulhelpuser span {
+  position: relative;
+  right: 5px;
+  color: #595959;
+}
+
+#DialogContent {
+  background-color: teal;
+}
+
+.BtnMenu {
+  position: fixed;
+  position: relative;
+  left: -20px;
+  cursor: pointer;
+}
+
+#Svghelpuser {
+  width: 20px;
+  height: 20px;
+  margin-top: 0.2rem;
+  position: relative;
+  right: 12px;
+  fill: white;
+}
+
+#Logo {
+  /* position: relative;
+    left: 350px; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: gray;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+#Logo2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #4e9dfb;
+    font-size:2rem;
+
+}
+#Numberworks{
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 4px;
+        padding-top: 4px;
+    /* border: 1px solid #4e9dfb; */
+    border-radius:4px;
+    /* box-shadow: 0 1px 1px 0 black; */
+    color: white;
+  font-size: 0.8rem;
+    font-weight: bold;
+    background-color: #4e9dfb;
+}
+#Numberworks2{
+    position: relative;
+    left: 67px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    /* border: 1px solid teal; */
+    border-radius: 3px;
+    color: green;
+     font-size: 0.8rem;
+    border: 1px solid green;
+    font-weight: bold;
+}
+#Numberworks3{
+    position: relative;
+    left: 67px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    /* border: 1px solid teal; */
+    border-radius: 3px;
+    color: rgba(255, 0, 0, 0.651);
+    font-size: 0.8rem;
+    border: 1px solid rgba(255, 0, 0, 0.651);
+    font-weight: bold;
+    /* background-color: rgba(67, 250, 82, 0.651); */
+}
+
+#Logo3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: gray;
+  font-weight: 600;
+  position: relative;
+  right: 30px;
+  top: 140px;
+  /* text-align: center; */
+}
+
+#Logo4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #4e9dfb;
+}
+
+#ListMenu {
+  direction: rtl;
+}
+
+#ListMenu #li {
+  direction: rtl;
+  position: relative;
+  text-align: right;
+  margin-right: -30px;
+  margin-top: 0px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #595959;
+  display: block;
+  width: 300px;
+  height: 47px;
+  font-family: "vazir";
+}
+
+#ListMenu #li1 {
+  direction: rtl;
+  text-align: right;
+  margin-right: -30px;
+  margin-top: 0px;
+  font-size: 15px;
+  cursor: pointer;
+  color: rgb(165, 164, 164);
+  display: block;
+  width: 300px;
+  height: 47px;
+  font-family: "vazir";
+}
+
+#DivParentSlidenav {
+  background-image: url(../public/image/shift-blog-2018-12-17-task-management-1-1.png);
+  background-size: contain;
+
+  background-repeat: no-repeat;
+}
+
+#SvgLogin2 {
+  position: relative;
+  top: 0px;
+  left: 5px;
+}
+
+#SvgMenuLogo {
+  width: 60px;
+  height: 60px;
+}
+
+#DivParentcreatework {
+  width: 100%;
+}
+
+#DivParentcreatework > div {
+  width: 95%;
+  height: 520px;
+  /* background-color: #4e9dfb; */
+  background-color: #f4f6f8;
+  border-radius: 10px;
+  margin-top: -25px;
+
+  /* box-shadow: 0 3px 10px 0 black; */
+}
+
+#divinputCreateNewWork {
+  background-color: white;
+  width: 600px;
+  height: 50px;
+  opacity: 0.8;
+  color: white;
+  border-radius: 45px;
+  direction: rtl;
+}
+
+#divinputCreateNewWork > input {
+  color: black;
+  border-radius: 5px;
+  margin-top: 8px;
+  /* width: 500px; */
+  font-family: "vazir";
+  height: 35px;
+  border: none;
+  outline: none;
+  padding-right: 10px;
+  caret-color: #4e9dfb;
+}
+
+#divinputCreateNewWork > input::placeholder {
+  padding-right: 8px;
+  font-family: "vazir";
+}
+
+#DivParentInputCreatework {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -20px;
+  bottom: 25px;
+}
+
+#divparentdashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -20px;
+  bottom: 25px;
+  /* height: 100% !important; */
+  /* background-color: #4e9dfb; */
+}
+
+#divparentdashboard > div:nth-child(2) {
+  position: relative;
+  top: -15px;
+  background-color: #4e9dfb;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
+#divparentdashboard > div:nth-child(2) span {
+  position: relative;
+  padding-right: 15px;
+  bottom: 4px;
+  color: #f4f6f8;
+}
+#rootDivDashboard{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 95% !important;
+}
+
+#divparentdashboard > div:nth-child(2) span > i {
+  position: relative;
+  top: 9px;
+}
+
+#divinputCreateNewWork button {
+  position: relative;
+  right: 547px;
+  bottom: 42px;
+  width: 32px;
+  height: 32px;
+  background-color: #4e9dfb;
+}
+
+#SvgPlus {
+  width: 17px;
+  height: 17px;
+  position: relative;
+  /* margin-bottom: 1.5rem; */
+  top: -0.8rem;
+  left: 0.15rem;
+  fill: white;
+}
+
+#Layoutinputdashbpard {
+  position: relative;
+  width: 600px;
+  border-radius: 5px;
+  height: 50px;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, .5); */
+}
+
+#divinputdashboard {
+  width: 600px;
+  height: 50px;
+  color: white;
+  border-radius: 5px;
+  direction: rtl;
+  position: relative;
+  top: 20px;
+}
+
+#divinputdashboard::before {
+  content: "";
+  width: 600px;
+  height: 50px;
+  position: absolute;
+  border-radius: 5px;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* background-image: url("../image/sidebar-1.jpg"); */
+  margin-left: 254px;
+  background-color: black;
+  /* background-repeat: no-repeat; */
+  /* filter: blur(5px);  */
+  opacity: 0.1;
+}
+
+#divinputdashboard > input {
+  color: rgba(0, 0, 0, 0.993);
+  border-radius: 5px;
+  margin-top: 10px;
+  font-family: "vazir";
+  height: 35px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  padding-right: 0px;
+  position: relative;
+  /* background-color: teal; */
+  width: 550px;
+}
+
+#divinputdashboard > input::placeholder {
+  position: relative;
+  padding-right: 8px;
+  margin-top: 18px;
+  color: rgba(0, 0, 0, 0.705);
+  font-family: "vazir";
+}
+
+#divinputdashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -20px;
+  bottom: 25px;
+}
+
+#divinputdashboard button {
+  position: relative;
+  right: 547px;
+  bottom: 42px;
+  width: 32px;
+  height: 32px;
+  background-color: #4e9dfb;
+}
+
+#cardDisplaywork {
+  width: 400px;
+}
+
+#BtnWork {
+  /* width: 100%;
+    height: 100%; */
+  /* text-align: center; */
+  font-size: 15px;
+  border-radius: 7px;
+  padding-top: 1px;
+  background-color: #4e9dfb;
+}
+
+#div111 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap-reverse;
+  position: relative;
+  /* visibility: hidden; */
+  bottom: 30px;
+}
+
+#cardDisplaywork p {
+  position: relative;
+  bottom: 25px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+#Divwork {
+  display: flex !important;
+  direction: rtl;
+  position: relative;
+  top: 35px;
+  right: -12px;
+  width: 320px;
+  justify-content: space-evenly;
+}
+
+#Divwork div {
+  width: 100%;
+}
+
+#Divwork h6 {
+  position: relative;
+  bottom: 9px;
+  color: #595959;
+  left: 45px;
+}
+
+#SvgDeleteWork {
+  color: #4e9dfb;
+  position: relative;
+  top: 0.2rem;
+}
+
+#Divwork button {
+  background-color: white;
+  outline: none;
+  border: none;
+  font-family: "vazir";
+  cursor: pointer;
+  position: relative;
+  bottom: 5px;
+}
+
+.scroll {
+  width: 400px;
+  height: 200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+  right: 0px;
+  background-color: white;
+}
+
+.H6 {
+  font-family: "vazir";
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+
+#scrollbar {
+  background-color: white;
+  border-radius: 12px;
+  height: 300px;
+}
+
+#scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+#scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(6, 98, 218, 0.603);
+  border-radius: 50px;
+  box-shadow: 0 0px 1px 0 black;
+}
+
+#success {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  top: -1px;
+  fill: white;
+}
+
+
+#Divwork a {
+  position: relative;
+  right: 15px;
+  bottom: 4px;
+}
+
+#SvgEmpty {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: 170px;
+  top: 100px;
+  color: #bfbfbf;
+  margin-bottom: 0.6rem;
+}
+
+#SvgEmpty2 {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: 225px;
+  top: 100px;
+  fill: #f4f6f8;
+}
+
+
+
+#SvgEmojie {
+  width: 20px;
+  height: 20px;
+  fill: #bfbfbf;
+  position: relative;
+  top: 8px;
+  right: 5px;
+}
+/* 
+#DivRootLAyoutDashboard{
+  position: relative;
+  height: 50px !important;
+  background-color: #4e9dfb !important;
+} */
+
+
+
+.HeaderListWorks {
+  position: relative;
+  left: 0px;
+  margin-left: 220px;
+  top: 47px;
+  color: #595959;
+  font-size: 18px;
+}
+
+#Ulbtns {
+  direction: rtl;
+}
+
+#Ulbtns li {
+  display: inline;
+  padding: 5px;
+}
+
+#Div1btn {
+  width: 70%;
+  height: 300px;
+  background-color: #bfbfbf;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  border-radius: 7px;
+  top: 90px;
+}
+
+#Div1btn2 {
+  width: 70%;
+  height: 300px;
+  background-color: #bfbfbf;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+  border-radius: 7px;
+  top: 90px;
+}
+
+#Div1btn3 {
+  width: 70%;
+  height: 300px;
+  background-color: #bfbfbf;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+  border-radius: 7px;
+  top: 90px;
+}
+
+#Div1btn div {
+  width: 400px;
+}
+
+#DivAlertdisplayresults {
+  position: relative;
+  margin-top: 50px;
+  background-color: #f4f6f8;
+  right: 0px;
+  border-radius: 5px;
+}
+
+#DivAlertdisplayresults p {
+  position: relative;
+  font-size: 16px;
+  color: #595959;
+  text-align: center;
+  bottom: -17px;
+  height: 60px;
+  font-family: "vazir";
+}
+
+#Ullistwo {
+  direction: rtl;
+  /* background-color: #4e9dfb; */
+  position: relative;
+  top: 30px;
+}
+
+#Ullistwo li {
+  position: relative;
+  top: 5px;
+  height: 25px;
+}
+
+.scroll2 {
+  width: 300px;
+  height: 180px;
+  overflow-y: scroll;
+  position: relative;
+  right: 0px;
+}
+
+#scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+#scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(6, 98, 218, 0.603);
+  border-radius: 50px;
+  box-shadow: 0 0px 1px 0 black;
+}
+
+
+
+
+
+#Alert {
+  background-color: #4e9dfb;
+  border: 3px solid white;
+  border-radius: 7px;
+  direction: rtl;
+  font-family: "vazir";
+  font-size: 16px;
+  position: relative;
+  bottom: 20px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+#DivBtnResult {
+  display: flex;
+  justify-content: center;
+}
+
+#DivparentDisplayresults {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.displayresultwork {
+  width: 80%;
+}
+
+#DivBtnsNavbar {
+  position: relative;
+  top: 80px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+#DivBtnsNavbar div a {
+  width: 150px;
+  margin-left: 20px;
+}
+
+#Tooltip {
+  font-family: "vazir";
+  direction: ltr;
+  color: green;
+  border-radius: 5px;
+  font-size: 12px;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+#btnregistersite {
+  position: relative;
+  bottom: 10px;
+  font-size: 14px;
+  font-size: 14px;
+  /* width: 130px; */
+  font-family: "vazir";
+  height: 30px;
+  margin-left: -10px;
+}
+
+#dialogregister {
+  display: flex;
+  justify-content: center;
+  background-color: #f4f6f8;
+}
+
+#stylehelmet {
+  color: #4e9dfb;
+  background-color: #4e9dfb;
+}
+
+.containerCourses {
+  position: relative;
+  top: 50px;
+  border: 3px solid white;
+  border-radius: 10px;
+  background-color: #4e9dfb;
+  height: 70px;
+}
+
+.containerCourses > h5 {
+  background-color: #4e9dfb;
+  color: #f4f6f8;
+}
+
+.connumbercourses {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 70px;
+}
+
+.connumbercourses span {
+  position: relative;
+  top: -1px;
+}
+
+.connumbercourses > div {
+  background-color: #f4f6f8;
+  border: 3px solid #f4f6f8;
+  border-radius: 10px;
+  height: 60px;
+  width: 250px;
+}
+
+.containerCourses > div h5 {
+  color: rgba(255, 255, 255, 0.938);
+}
+
+.contcourses {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 120px;
+  margin-bottom: 50px;
+}
+
+#stylesimg {
+  width: 350px;
+}
+
+#spiner {
+  text-align: center;
+}
+
+.contcourses h6 {
+  text-align: center;
+  position: relative;
+  bottom: 0px;
+}
+
+.contcourses p {
+  text-align: center;
+  position: relative;
+  bottom: 0px;
+}
+
+.contcourses > div {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border-radius: 7px;
+}
+
+.contcourses > div > div {
+  width: 350px;
+  height: 305px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+#divmaincourses {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+#paginarion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  /* top: 70px; */
+  margin-bottom: 20px;
+  height: 60% !important;
+}
+
+.DivSinglecourse {
+  display: flex;
+  justify-content: center;
+}
+
+.DivSinglecourse > div {
+  border-radius: 7px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 75%;
+}
+
+.DivSinglecourse > div div {
+  width: 75%;
+  direction: rtl;
+  position: relative;
+  top: 10px;
+}
+
+.DivSinglecourse > div:nth-child(3) p {
+  text-align: justify;
+}
+
+#DivMainUserprofile {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+  top: 25px;
+  background-color: #f4f6f8;
+  direction: rtl;
+}
+
+#DivMainUserprofile > div {
+  border-radius: 7px;
+  display: flex;
+  min-height: 500px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.divBtnexitanddashboard {
+  display: flex;
+  justify-content: center;
+}
+
+#DivMainUserprofile > div:nth-child(2) {
+  position: relative;
+
+  top: 130px;
+  left: 150px;
+}
+
+#DivMainUserprofile > div > div:nth-child(1) {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: 100px;
+}
+
+#DivMainUserprofile > div > div:nth-child(2) {
+  width: 300px;
+  /* background-color: hotpink; */
+  top: 100px;
+  position: relative;
+}
+
+#DivMainUserprofile > div > div:nth-child(2) > div {
+  position: relative;
+  top: 0px;
+  right: 50px;
+}
+
+#DivMaindashboard {
+  width: 100%;
+  min-width: 560px;
+  z-index: -1;
+  position: absolute;
+  right: 0px;
+  height: 93% !important;
+  /* background-color: #4e9dfb; */
+}
+
+.dropdown12 {
+  background-color: white;
+  width: 118px;
+  position: fixed;
+  text-align: center;
+  left: 51px;
+  top: 65px;
+  transition: ease-in-out 0.9;
+  height: 130px;
+}
+
+.dropdown12 a {
+  color: #595959;
+  font-size: 15px;
+  position: relative;
+  /* right: -10px; */
+}
+
+.dropdown12 > ul > li:nth-child(1) > a {
+  position: relative;
+  left: 11px;
+  top: -3px;
+}
+
+.dropdown12 > ul > li:nth-child(3) > a {
+  position: relative;
+  left: 25px;
+  top: -2px;
+}
+
+.dropdown12 > ul > li:nth-child(5) > a {
+  position: relative;
+  left: 25px;
+  top: 0px;
+}
+
+#navDashboard {
+  background-color: rgba(255, 166, 0, 0.795);
+  z-index: 0;
+  position: relative;
+  top: 0px;
+}
+
+#Svgarrowdon {
+  width: 10px;
+  height: 12px;
+  position: relative;
+  right: 10px;
+  top: 4px;
+  fill: #f4f6f8;
+}
+
+#Svgdashboard1 {
+  width: 17px;
+  height: 17px;
+  position: relative;
+  right: 10px;
+  top: 2px;
+  fill: gray;
+}
+
+#Svgdashboard2 {
+  width: 17px;
+  height: 17px;
+  position: relative;
+  right: 23px;
+  top: 4px;
+  fill: gray;
+}
+
+#Svgdashboard3 {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  right: 22px;
+  top: 7px;
+  fill: gray;
+}
+
+#navDashboard p {
+  position: relative;
+  bottom: 25px;
+  font-size: 24px;
+  right: 30px;
+}
+
+#navDashboard i {
+  position: relative;
+  left: 10px;
+}
+
+#navDashboard a:nth-child(1) {
+  position: relative;
+  margin-right: -5px;
+}
+
+#DivMainBtnDropdown {
+  width: 121px;
+  position: relative;
+  margin-left: 50px;
+}
+
+#DivBtnDropdown {
+  width: 100%;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, .5); */
+}
+
+#DivBtnDropdown::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+
+  opacity: 0.5;
+  background-attachment: fixed;
+}
+
+.layoutdashboard {
+  width: 260px;
+  position: relative;
+  float: right;
+  right: 0px;
+  z-index: 1;
+  height: 100% !important;
+ 
+}
+
+.slidenavdashboard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100% !important;
+  position: relative;
+  /* background-color: black; */
+}
+
+#navDashboard > div > i {
+  position: relative;
+  text-align: right;
+  margin-right: 20px;
+  font-size: 35px;
+  top: 0px;
+  color: #f4f6f8;
+  display: none;
+}
+
+.slidenavdashboard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0px;
+  background-image: url(../public/image/sidebar-1.jpg);
+  background-repeat: no-repeat;
+  filter: blur(8px);
+  /* opacity: 0.8; */
+}
+
+#slidenavdashboard2 > :nth-child(1) img {
+  width: 100%;
+  border-radius: 100px;
+}
+
+#slidenavdashboard2 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  margin-top: 20px;
+}
+
+#slidenavdashboard2 > div:nth-child(1) {
+  position: relative;
+  width: 40%;
+}
+
+#slidenavdashboard2 > div:nth-child(2) {
+  position: relative;
+  width: 40%;
+}
+
+#slidenavdashboard2 > div:nth-child(2) > p:nth-child(1) {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  top: 10px;
+  position: relative;
+}
+
+#slidenavdashboard2 > div:nth-child(2) > p:nth-child(2) {
+  text-align: center;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.623);
+}
+
+#ulnavdashboard {
+  /* background-color: blue; */
+  text-align: right;
+  position: relative;
+  top: 20px;
+  right: 2px;
+}
+
+#ulnavdashboard > ul a {
+  display: block;
+  position: relative;
+  margin-right: 0px;
+  /* color: black; */
+  width: 85%;
+  right: -25px;
+  /* background-color: violet; */
+  margin-top: 0px;
+  font-size: 16px;
+  padding-bottom: 25px;
+  text-align: right;
+  padding-right: 15px;
+  
+}
+#ulnavdashboard > ul a i {
+position: relative;
+right: -10px !important; 
+}
+
+.material-icons {
+  position: relative;
+  top: 11px;
+  margin-left: 10px;
+  /* color: #BFBFBF; */
+}
+
+.bgActive {
+  background-color: rgba(255, 166, 0, 0.795);
+  border-radius: 5px;
+  width: 100% !important;
+  right: 0.4rem !important;
+  position: relative;
+  transition: ease-in-out 0.4s;
+  color: #f4f6f8;
+  /* top: 0.5rem; */
+  padding-top: 1.5rem;
+}
+
+.bgdisibled {
+  color: black;
+}
+
+#Divcoursesdashboard {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  z-index: -1;
+}
+
+#Divcoursesdashboard > div:nth-child(1) {
+  background-color: #bfbfbf;
+  width: 88%;
+  height: 50px;
+  text-align: center;
+  padding-top: 5px;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 20px;
+}
+
+#Divcoursesdashboard > div:nth-child(2) {
+  background-color: white;
+  width: 80%;
+  height: 260px;
+  text-align: center;
+  padding-top: 5px;
+  border-radius: 5px;
+  border-radius: 5px;
+  margin-top: 100px;
+  position: relative;
+}
+
+#Divcoursesdashboard > div:nth-child(2) img {
+  width: 200px;
+  height: 150px;
+}
+
+#Divcoursesdashboard > div:nth-child(1) span {
+  color: white;
+  font-size: 17px;
+  border-radius: 5px;
+  background-color: teal;
+  padding-left: 6px;
+  padding-right: 6px;
+  position: relative;
+  margin-left: 2px;
+  margin-right: 2px;
+  /* padding-top: 8px ;
+    padding-bottom: 8px; */
+}
+
+#DivMainCoursedashboard > div {
+  width: 240px;
+  height: 120px;
+  background-color: white;
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 5px;
+}
+
+#DivMainCoursedashboard {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: 20px;
+  background-color: aquamarine;
+}
+
+#titlecourse {
+  width: 242px;
+  height: 50px;
+  background-color: rgba(255, 166, 0, 0.795);
+  padding-top: 10px;
+  z-index: 2;
+  position: absolute;
+  bottom: 100px;
+  text-align: center;
+  margin-right: 0px;
+  border-radius: 5px;
+  color: white;
+}
+
+.statusecourse {
+  color: #595959;
+  position: relative;
+  margin-top: 40px;
+  padding-right: 10px;
+}
+
+.statusecourse span {
+  color: teal;
+  position: relative;
+  margin-right: 5px;
+}
+
+.timecourse {
+  color: #595959;
+  position: relative;
+  margin-top: 4px;
+  padding-right: 10px;
+}
+
+.timecourse span {
+  color: teal;
+  position: relative;
+  margin-right: 5px;
+  direction: ltr;
+}
+
+.scrolldashboard {
+  width: 900px;
+  height: 450px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+  right: -100px;
+  bottom: 10px;
+  padding-bottom: 15px;
+
+  /* background-color: grey; */
+}
+
+#DivMainCoursedashboard::-webkit-scrollbar {
+  width: 10px;
+  background-color: #bfbfbf;
+  border-radius: 100px;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14),
+    0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+#DivMainCoursedashboard::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 100px;
+  box-shadow: 0 0px 1px 0 black;
+}
+
+#Divtable {
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;
+  height: 100%;
+}
+#PaginationDshboard{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#Divtable > div {
+  width: 900px;
+}
+
+#Divtable > div > table {
+  direction: rtl;
+}
+
+#trTable > td:nth-child(2) > a {
+  background-color: rgb(168, 77, 233);
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  z-index: 0;
+}
+
+#trTable > td:nth-child(4) > a {
+  background-color: #4e9dfb;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+#trTable > td:nth-child(5) > a {
+  background-color: rgb(228, 72, 72);
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+#td1 th {
+  font-size: 16px;
+}
+
+#td1 a {
+  font-size: 14px;
+  position: relative;
+  margin-right: 125px;
+  background-color: rgb(6, 196, 88);
+  padding-right: 11px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: white;
+}
+
+#td1 i {
+  font-size: 15px;
+  position: relative;
+  top: 5px;
+}
+
+#paginariondashboard {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 565px;
+  margin-left: 470px;
+}
+
+#paginariondashboard > ul li a {
+  font-size: 16px;
+  /* background-color: rgb(228, 72, 72); */
+}
+
+.blur {
+  filter: blur(15px);
+}
+
+.Modal {
+  background-color: white;
+  width: 600px;
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+#dovmodalcontent div {
+  width: 500px;
+}
+
+.Modalbody {
+  /* background-color: rebeccapurple; */
+  /* height: 450px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#dovmodalcontent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#dovmodalcontent > div {
+  text-align: center;
+}
+
+#dovmodalcontent > div > h5 {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background-color: #4e9dfb;
+  padding: 15px;
+  color: #f4f6f8;
+  border-radius: 25px;
+}
+
+#dovmodalcontent > div > h6 {
+  text-align: center;
+  position: relative;
+  /* margin-top: 30px; */
+  margin-bottom: 20px;
+}
+
+.prefix {
+  position: relative;
+  left: 40px;
+  text-align: left;
+}
+
+.Modal input {
+  direction: rtl;
+  font-family: "vazir";
+}
+
+.Modal input::placeholder {
+  font-family: "vazir";
+  color: #595959;
+  font-size: 15px;
+  position: relative;
+  padding-right: 5px;
+}
+
+.Modal textarea::placeholder {
+  font-family: "vazir";
+  color: #595959;
+  font-size: 15px;
+  position: relative;
+  padding-right: 5px;
+}
+
+.divinputfile {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  position: relative;
+  /* right: 10px; */
+  /* width: 595px; */
+}
+
+.divinputfile i {
+  color: gray;
+  position: relative;
+  right: 30px;
+  /* background-color: rebeccapurple;                                   */
+}
+
+.inputtextfile {
+
+  flex-direction: row-reverse;
+  display: flex;
+}
+.inputtextfile div {
+  width: 0% !important;
+  background-color: #4e9dfb;
+
+}
+
+#textarea2 {
+  direction: rtl;
+  /* height: 65px; */
+  font-family: "vazir";
+  position: relative;
+  right: 10px;
+}
+
+.scroolltextarea {
+  height: 65px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.scroolltextarea::-webkit-scrollbar {
+  width: 10px;
+  background-color: #bfbfbf;
+  border-radius: 100px;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14),
+    0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+.scroolltextarea::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 100px;
+  box-shadow: 0 0px 1px 0 black;
+}
+
+#Btnmoal {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+#Btnmoal > button:nth-child(1) {
+  position: relative;
+  font-family: "vazir";
+  margin-left: 20px;
+  border-radius: 5px;
+  background-color: rgb(228, 72, 72);
+  cursor: pointer;
+}
+
+#Btnmoal > button:nth-child(2) {
+  position: relative;
+  font-family: "vazir";
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 128, 0, 0.788);
+}
+
+#Inputsearchdashbpard > input {
+  background-color: #bfbfbf;
+  width: 600px;
+  direction: rtl;
+  position: relative;
+  padding-right: 20px;
+  caret-color: rgb(255, 136, 0);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14),
+    0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -1px rgba(0, 0, 0, 0.2);
+  /* border:1px solid black; */
+}
+
+#Inputsearchdashbpard > input::placeholder {
+  font-family: "vazir";
+  color: white;
+  position: relative;
+  padding-right: 10px;
+}
+
+.backgroundBlur {
+  filter: blur(15px);
+}
+.errorMsg{
+  color: rgba(255, 0, 0, 0.617) !important;
+  font-family: "vazir";
+  font-size: 0.85rem;
+  text-align: right;
+  font-weight: bold;
+
+}
+
+/*Media Querys*/
+@media only screen and (max-width: 516px) {
+  #DivAlertdisplayresults p {
+    font-size: 14px;
+  }
+
+  /* color: #f4f6f8; */
+
+  #Div1btn {
+    width: 100%;
+  }
+
+  #Div1btn2 {
+    width: 100%;
+  }
+
+  #Div1btn2 > div > div:nth-child(2) {
+    position: relative;
+    width: 220px;
+  }
+
+  #Div1btn2 > div > div:nth-child(1) #DivAlertdisplayresults {
+    position: relative;
+    width: 270px;
+    margin-left: 35px;
+  }
+
+  #Div1btn3 #DivAlertdisplayresults {
+    width: 300px;
+    position: relative;
+    margin-left: 40px;
+  }
+
+  #AnimatedProgressProvider {
+    position: relative;
+    margin-left: 40px;
+  }
+
+  #Divtable > div {
+    width: 300px;
+    position: relative;
+    margin-left: 200px;
+    bottom: 35px;
+  }
+
+  #divparentdashboard > div:nth-child(2) {
+    position: relative;
+    left: 100px;
+  }
+
+  #paginariondashboard > ul li a {
+    font-size: 16px;
+    /* background-color: rgb(228, 72, 72); */
+  }
+
+  #paginariondashboard {
+    position: fixed;
+    top: 565px;
+  }
+
+  #Inputsearchdashbpard > input {
+    width: 300px;
+    position: relative;
+    margin-right: -220px;
+    z-index: 0;
+    bottom: 30px;
+  }
+}
+
+/* @media only screen and (max-width: 400px){
+#Div1btn3{
+    position: fixed;
+}
+@media only screen and (max-width: 340px){
+    #DivparentDisplayresults{
+    position: relative;
+    left: 0px;
+}
+} */
+ #divBtnsuccess {
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+  #divBtnsuccess span{
+    white-space: nowrap;
+    position: relative;
+    top: 0.2rem;
+    font-size: 15px;
+    font-family: "vazir";
+  }
+  #SvgEmpty3{
+    width: 50px;
+    height: 50px;;
+    position: relative;
+ left: 60px;
+ top: 100px;
+ fill: #f4f6f8;
+}
+  #styleEmptyworks2{
+    position: relative;
+    right: 0px;
+    top: 75px;
+    color:#595959;
+}
+@media only screen and (max-width: 380px) {
+  #DivBtnsNavbar div {
+    position: relative;
+    margin-bottom: 15px;
+  }
+
+  #stylesimg {
+    /* width: 400px; */
+    width: 340px;
+    position: relative;
+    left: 10px;
+  }
+
+  .contcourses > div {
+    box-shadow: none;
+  }
+
+  #DivMainCoursedashboard {
+    position: relative;
+    padding-right: 120px;
+  }
+
+  #divinputCreateNewWork {
+    width: 260px;
+  }
+
+  #divinputCreateNewWork button {
+    display: none;
+  }
+
+  #divnotwork {
+    position: relative;
+    margin-right: 20px;
+    /* background-color: red; */
+  }
+
+  #SvgEmpty2 {
+    display: none;
+  }
+
+  #Div1btn2 > div {
+    position: relative;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: rgb(228, 72, 72); */
+  }
+
+  #AnimatedProgressProvider {
+    position: relative;
+    left: 20px;
+  }
+
+  #Div1btn2 > div > div:nth-child(3) {
+    position: relative;
+    margin-right: 90px;
+
+    /* background-color: red; */
+  }
+
+  #Div1btn2 > div > div:nth-child(2) {
+    position: relative;
+    margin-right: 50px;
+    /* background-color: green; */
+    top: 60px;
+    left: 120px;
+  }
+
+  #Inputsearchdashbpard > input {
+    width: 270px;
+    position: relative;
+    margin-right: -220px;
+    z-index: 0;
+    bottom: 30px;
+  }
+
+  #trTable > td:nth-child(2) {
+    display: none;
+  }
+
+  #td1 > th:nth-child(2) {
+    display: none;
+  }
+
+  #Divtable > div {
+    position: relative;
+    /* right: -20px; */
+    top: 0px;
+  }
+}
+
+@media only screen and (max-width: 603px) {
+  #divinputCreateNewWork {
+    max-width: 350px;
+  }
+
+  #divinputCreateNewWork button {
+    position: relative;
+    right: 300px;
+  }
+
+  #BtnUserhelp {
+    position: relative;
+    left: 540px;
+    bottom: 40px;
+  }
+
+  #btnnav {
+    position: relative;
+    left: 0px;
+    top: 0px;
+  }
+
+  #divinputdashboard {
+    position: relative;
+    width: 350px;
+    bottom: 50px;
+  }
+
+  #divinputdashboard button {
+    position: relative;
+    right: 300px;
+    bottom: 42px;
+    width: 32px;
+    height: 32px;
+    background-color: #4e9dfb;
+  }
+
+  #div111 div {
+    width: 300px;
+  }
+
+  #SvgEmpty {
+    position: relative;
+    left: 130px;
+  }
+
+  #Divwork div {
+    position: relative;
+    right: 0px;
+  }
+
+  #Divwork h6 {
+    position: relative;
+    bottom: 9px;
+    color: #595959;
+
+    left: -25px;
+  }
+
+  #success {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    margin-bottom: 7px;
+  }
+
+  #Btnsuccess {
+    width: 25px;
+    height: 25px;
+  }
+
+  #divBtnsuccess {
+    position: relative;
+    margin-left: 10px;
+  }
+
+  #Divtable > div {
+    max-width: 430px;
+    position: relative;
+    left: 0px;
+  }
+
+  #spanprice {
+    display: none;
+  }
+
+  .Modal {
+    width: 300px;
+  }
+
+  #dovmodalcontent div {
+    width: 280px;
+  }
+
+  #Divcoursesdashboard {
+    width: 350px;
+    position: fixed;
+    left: -15px;
+  }
+
+  #DivMainCoursedashboard {
+    position: relative;
+    bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #BtnUserhelp {
+    position: relative;
+    left: 8px;
+    bottom: -365px;
+  }
+
+  #div111 > div:nth-child(3) {
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  #DivBtnResult {
+    position: relative;
+    bottom: 13px;
+  }
+
+  #DivParentInputCreatework {
+    position: relative;
+    top: 5px;
+  }
+
+  #div111 > div:nth-child(3) {
+    position: relative;
+    margin-top: 30px;
+  }
+
+  #Divtable > div {
+    max-width: 600px;
+  }
+
+  #Inputsearchdashbpard > input {
+    max-width: 500px;
+    position: relative;
+    left: 0px;
+    z-index: 0;
+    top: -25px;
+  }
+
+  #td1 > th:nth-child(1) {
+    position: relative;
+    top: 0px;
+  }
+
+  #spanprice {
+    display: none;
+  }
+
+  #divparentdashboard > div:nth-child(2) {
+    position: relative;
+    top: -20px;
+  }
+
+  #Inputsearchdashbpard {
+    position: relative;
+    top: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #BtnUserhelp {
+    position: relative;
+    left: 8px;
+    bottom: -25px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #Div1btn2 > :nth-child(2) {
+    display: none;
+    background-color: brown;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #DivMainUserprofile > div {
+    height: 750px;
+  }
+
+  #DivMainUserprofile > div > div:nth-child(2) {
+    position: relative;
+    /* background-color: blue; */
+    height: 240px;
+    margin-bottom: 100px;
+  }
+
+  #BtnUserhelp {
+    position: relative;
+    left: 8px;
+    bottom: -715px;
+  }
+
+  #div111 > div:nth-child(2) {
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  #DivBtnsNavbar > div:nth-child(4) {
+    position: relative;
+    margin-bottom: 15px;
+  }
+
+  #Div1btn {
+    position: relative;
+    height: 400px;
+  }
+
+  #Div1btn > div:nth-child(1) {
+    height: 120px;
+  }
+
+  #Div1btn > div:nth-child(2) {
+    position: relative;
+    bottom: 20px;
+    margin-right: 75px;
+    height: 150px;
+    /* background-color: rgba(255, 0, 0, 0.651); */
+  }
+
+  #SvgEmpty2 {
+    position: relative;
+    left: 125px;
+    top: 0px;
+  }
+
+  #Div1btn > div:nth-child(2) p {
+    position: relative;
+    margin-top: -80px;
+    margin-right: 90px;
+  }
+
+  #Div1btn2 {
+    position: relative;
+    height: 400px;
+  }
+
+  #Div1btn2 > div:nth-child(1) {
+    height: 120px;
+    margin-bottom: 250px;
+  }
+
+  #Div1btn2 > div:nth-child(2) {
+    position: relative;
+    bottom: -20px;
+    margin-right: 75px;
+    height: 150px;
+    background-color: rgba(255, 0, 0, 0.651);
+  }
+
+  #SvgEmpty2 {
+    position: relative;
+    left: 125px;
+    top: 0px;
+  }
+
+  #Div1btn3 {
+    width: 100%;
+    position: relative;
+  }
+
+  .DivMainCoursedashboard {
+    position: relative;
+    right: 0px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .displayresultwork {
+    width: 80%;
+  }
+
+  .hruserProfile {
+    display: none;
+  }
+
+  #Div1btn2 {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    height: 400px;
+  }
+
+  .slidenavdashboard {
+    position: relative;
+    left: 300px;
+    animation-name: amir2;
+    animation-duration: 2s;
+    z-index: 0;
+    display: none;
+  }
+
+  .displaypagination {
+    display: none;
+  }
+
+  .displayslidenav {
+    position: relative;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 560px;
+    animation-name: amir;
+    animation-duration: 2s;
+    z-index: 1;
+  }
+
+  .displayslidenav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0px;
+    background-image: url(../public/image/sidebar-1.jpg);
+    background-repeat: no-repeat;
+    filter: blur(8px);
+  }
+
+  #navDashboard > div > i {
+    visibility: visible;
+    position: relative;
+    text-align: right;
+    margin-right: 20px;
+    font-size: 35px;
+    top: 0px;
+    color: #f4f6f8;
+    display: block;
+  }
+
+  #navDashboard > div p {
+    display: none;
+  }
+
+  #Inputsearchdashbpard > input {
+    max-width: 500px;
+    position: relative;
+    left: 0px;
+    z-index: 0;
+  }
+
+  #paginariondashboard {
+    position: fixed;
+    left: -370px;
+    /* background-color: aquamarine; */
+  }
+
+  #DivMainCoursedashboard {
+    position: fixed;
+    background-color: aquamarine;
+    left: 20px;
+    display: block;
+    width: 290px;
+  }
+
+  #DivMainCoursedashboard > div {
+    position: relative;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 1143px) {
+  #Div1btn {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #Div1btn div {
+    /* background-color: rgba(6, 98, 218, 0.603); */
+    width: 280px;
+  }
+
+  #SvgEmpty2 {
+    position: relative;
+    left: 125px;
+  }
+
+  #Div1btn > div:nth-child(2) p {
+    position: relative;
+    margin-right: 90px;
+  }
+
+  #Div1btn2 {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    height: 400px;
+  }
+
+  #Div1btn3 {
+    position: relative;
+    height: 550px;
+  }
+
+  #DivAlertdisplayresults p {
+    font-size: 13px;
+  }
+
+  #Div1btn2 > div:nth-child(2) p {
+    position: relative;
+    margin-right: 50px;
+    margin-bottom: 200px;
+  }
+
+  .scrolldashboard {
+    width: 600px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  /* #BtnUserhelp {
+        position: relative;
+        left: 8px;
+        bottom: -25px;
+       } */
+  #slidenavdashboard {
+    height: 650px;
+  }
+}
+
+@media only screen and (max-width: 1330px) {
+  .scrolldashboard {
+    max-width: 700px;
+  }
+}
+
+@keyframes amir {
+  0% {
+    left: 300px;
+    top: 0px;
+  }
+
+  50% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes amir2 {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+
+  50% {
+    left: 300px;
+    top: 0px;
+  }
+}

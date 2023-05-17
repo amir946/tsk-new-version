@@ -1,0 +1,146 @@
+
+@font-face {
+    font-family: "vazir";
+    src: url("./../../../public/fonts/Vazir.eot") format("eot"),
+        url("./../../../public/fonts/Vazir.ttf") format("woff"),
+        url("./../../../public/fonts/Vazir.woff") format("truetype"),
+        url("./../../../public/fonts/Vazir.woff2") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+.formSignin {
+  width: 100%;
+  max-width: 420px;
+  padding: 15px;
+  margin: auto;
+ 
+}
+
+.formLabelGroup {
+  position: relative;
+  margin-bottom: 1rem;
+ 
+}
+
+.formLabelGroup > input,
+.formLabelGroup > label {
+  height: 3.125rem;
+  padding: .75rem;
+  direction: rtl;
+  color: teal;
+ 
+}
+
+.formLabelGroup > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0; /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: black;
+  pointer-events: none;
+  cursor: text; /* Match the input under the label */
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+  text-align: right;
+  font-family: "vazir" !important;
+  font-size: 15px;
+}
+
+.formLabelGroup input::-webkit-input-placeholder {
+  color: transparent;
+ 
+}
+
+.formLabelGroup input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.formLabelGroup input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.formLabelGroup input::-moz-placeholder {
+  color: transparent;
+}
+
+.formLabelGroup input::placeholder {
+  color: transparent;
+ 
+}
+
+.formLabelGroup input:not(:placeholder-shown) {
+  padding-top: 1.25rem;
+  padding-bottom: .25rem;
+ 
+}
+
+.formLabelGroup input:not(:placeholder-shown) ~ label {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  font-size: 12px;
+  color: black;
+ 
+}
+.errorMsg{
+  color: rgba(255, 0, 0, 0.617) !important;
+  font-family: "vazir";
+  font-size: 0.85rem;
+  text-align: right;
+  font-weight: bold;
+
+  
+}
+
+/* Fallback for Edge
+-------------------------------------------------- */
+@supports (-ms-ime-align: auto) {
+  .formLabelGroup > label {
+    display: none;
+  }
+  .formLabelGroup input::-ms-input-placeholder {
+    color: #777;
+  }
+}
+
+/* Fallback for IE
+-------------------------------------------------- */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .formLabelGroup > label {
+    display: none;
+  }
+  .formLabelGroup input:-ms-input-placeholder {
+    color: #777;
+  }
+}
+#BtnSubmitLogin{
+  font-family: "vazir";
+  width: 400px;
+  font-size: 19px;
+  /* height: 45px; */
+  background-color: #4e9dfb;
+  border-radius: 7px;
+
+ 
+}
+#checkboxText{
+  font-family: "vazir";
+}
+#CopyrightsText{
+  text-align: center;
+  margin-top: 55px;
+}
+#Layer_1{
+  text-align: center;
+  position: relative;
+  margin-left: 0px;
+}
+
+@media only screen and (max-width: 426px) {
+#BtnSubmitLogin{
+  max-width: 100%;
+}
+}
